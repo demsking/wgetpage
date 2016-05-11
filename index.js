@@ -1,9 +1,6 @@
 var wget = require('./lib');
 
-module.exports = function(url, dest) {
+module.exports = function(url, dest, done) {
     wget.init(url, dest);
-
-    wget.download(url, true, function(body) {
-        wget.parse(body);
-    });
+    wget.download(url, true, done);
 };
