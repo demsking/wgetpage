@@ -1,0 +1,6 @@
+#!/usr/bin/env node
+
+var path = require('path');
+var wget = require('../');
+
+wget(process.argv[2], path.join(process.cwd(), '/output'));
