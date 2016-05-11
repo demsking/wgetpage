@@ -1,12 +1,9 @@
 {
   "name": "wgetpage",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Download an HTML document with all dependencies (css, js, image)",
   "main": "index.js",
   "bin": "bin/wgetpage",
-  "scripts": {
-    "start": "DEBUG=wgetpage:* node ."
-  },
   "keywords": ["html", "wget", "download"],
   "repository" : {
     "type": "git",
@@ -15,7 +12,6 @@
   "author": "Sébastien Demanou",
   "license": "MIT",
   "dependencies": {
-    "debug": "^2.2.0",
     "jq-html-parser": "^0.3.0",
     "mkdirp": "^0.5.1",
     "request": "^2.72.0"
