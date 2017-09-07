@@ -4,8 +4,12 @@
   "description": "Download an HTML document with all dependencies (css, js, image, html)",
   "main": "index.js",
   "bin": "bin/wgetpage",
-  "keywords": ["html", "wget", "download"],
-  "repository" : {
+  "keywords": [
+    "html",
+    "wget",
+    "download"
+  ],
+  "repository": {
     "type": "git",
     "url": "git://github.com/demsking/wgetpage.git"
   },
@@ -14,6 +18,12 @@
   "dependencies": {
     "jq-html-parser": "^0.3.0",
     "mkdirp": "^0.5.1",
-    "request": "^2.72.0"
-  }
+    "request": "^2.72.0",
+    "snyk": "^1.40.2"
+  },
+  "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
